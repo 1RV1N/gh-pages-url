@@ -1,0 +1,319 @@
+*{margin: 0;padding: 0;}
+$black : rgb(26,26,26);
+
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: $black ;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background:white; 
+	// border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: lightgray; 
+  }
+
+$tablet:980px;
+
+@mixin sm {
+	@media(max-width: #{$tablet}){
+		@content;
+	}
+}
+
+
+@keyframes bcColor{
+	0%{background-position:23% 0%}
+    50%{background-position:78% 100%}
+    100%{background-position:23% 0%}
+}
+
+.highlight{
+	color: lightcoral;
+}
+.highlightLink{
+	color: lightblue;
+}
+.iconBack{
+	// background-color: rgb(96,96,96);
+	border: solid 1px White;
+	border-radius: 5px;
+
+}
+
+ul {
+ list-style: none;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.main{
+	display: flex;
+	color: white;
+	font-family: "Blender Pro";
+	width: 100%;
+}
+
+.navSmClicked{
+	display: block;
+}
+.sectionSmClicked{
+	opacity: 20%;
+}
+nav{
+	width: 10%;
+	animation: bcColor linear 7s infinite;
+	background: linear-gradient(300deg, #F9E0EA, #E4E1F6,  #DEF9F1, #F5F9E0  );
+	background-size: 200% 200%;
+	z-index: 10;
+	height: 100vh;
+	ul{
+		width: 105px;
+		height: 83vh;
+		margin-top: 7.5vh;
+		background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 100%);
+		position: relative;
+		right: -50%;
+		padding: 0 20px;
+		padding-top: 2vh;
+		@include sm{
+			display: none;
+		}
+
+		li{
+			margin-bottom: 30px;
+		}
+		li:hover{
+			color: #B3B3B3;
+			cursor: pointer;
+		}
+
+	}
+	
+}
+section{
+	width: 90%;
+
+	.logo{
+		position: absolute;
+		z-index: 10;
+		top: 6.5vh;
+		@include sm{
+			top: 2.5vh;
+		}
+		
+		h1{
+			color: $black;
+			background-color: white;
+			font-size: 3.5em;
+			padding-left: 3px;
+			@include sm{
+				font-size: 2.5em;
+			}
+		}
+		p{
+			padding-top: 5px;
+		}
+	}
+
+	.articleMain{
+		display: flex;
+		justify-content: flex-end;
+		width: 85%;
+		margin-left: 9%;
+
+		@include sm{
+			width: 90%;
+			margin-left: 5%;
+		}
+
+		article{
+			transition: 1s;
+		}
+
+		#art1{
+
+		}
+		#art2{
+
+		}
+		#art3{
+
+		}
+		#art4{
+			
+
+			img{
+				width: calc(100% - 20px);
+				position: absolute;
+				bottom: 10px;
+				
+			}
+		}
+		.articleClosed{
+			background-color: $black;
+			height: 82vh;
+			width: 1%;
+			padding-top: 3vh;
+			margin-top: 7.5vh;
+			margin-right: 3px;
+			@include sm{
+				display: none;
+			}
+			
+		}
+		.articleClosedMarginLeft{
+			margin-left: 3px;
+			margin-right: 0px;
+			@include sm{
+				display: none;
+			}
+		}
+		.articleOpen{
+
+			width: 97%;
+			height: 83vh;
+			padding: 0 10Px;
+			padding-top: 2vh;
+			margin-top: 7.5vh;
+
+			background-color: $black;
+			position: relative;
+
+			display: flex;
+			flex-wrap: wrap;
+			overflow: auto;
+			@include sm{
+				height: 93vh;
+				margin-top: 3.5vh;
+			}
+
+			.projectInfo{
+				position: fixed;
+				@include sm{
+					position: static;
+					padding-top: 10vh;
+					background-color: $black;
+				}
+				
+
+				.ariane{
+					/*position: fixed;*/
+					/*top: auto ;*/
+					// margin-bottom: 25vh;
+				}
+				.projectMenu{
+					position: relative;
+					/*top: 40%;*/
+					// left: 2%;
+					@include sm{
+						border-bottom:solid 1px white;
+						border-right:solid 1px white;
+					}
+					
+					
+					ul{
+						border-left: solid 1px white;
+						padding-left: 19px;
+						padding-top: 10px ;
+						padding-bottom: 10px ;
+						@include sm{
+							// display: flex;
+							
+						}
+						
+
+						li{
+							list-style-type: disc;
+							font-size: 2em;
+							@include sm{
+								// list-style-type: none;
+								// margin-right: 7%;
+								// font-size:1em;
+							}
+
+						    :hover{
+								color: #B3B3B3;
+								cursor: pointer;
+							}
+
+
+							span{
+							    font-size: 14px;
+							    position: relative;
+								top: -4px;
+								
+							}
+						}
+					}
+						 
+				}
+			}
+			.projectContainer{
+				margin-top: 12vh;
+				margin-left: 140px;
+				max-width: 610px;
+				@include sm{
+					margin-left: 0px;
+				}
+
+				.projectName{
+					padding-bottom: 2vh;
+					
+					h2{
+						font-size: 3em;
+					}
+
+					.skills{
+						display: flex;
+
+						img{
+							width: 30px;
+							margin-right: 10px;
+							transition: 0.2s;
+						}
+						:hover{
+							width: 50px;
+							transition: 0.2s;
+						}
+					}
+				}
+				h3{
+					
+					font-size: 1.5em;
+				}
+
+				.projectImgContainer{
+					margin-top: 3vh;
+					background-color: white;
+					padding-right:  1%;
+					padding-top: 2%;
+
+					img{
+						width: 97%;
+						background-color: white;
+						margin-left: 2%;
+						margin-bottom: 2%;
+					}	
+
+				}
+			}
+
+		}
+
+	}
+	
+
+}
