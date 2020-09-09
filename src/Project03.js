@@ -21,9 +21,9 @@ class Project03 extends Component{
                         Lors de ce projet ma principale tâche à été d'intégrer le design créé. En amont de cela, il à fallu définir les technologies à utiliser pour nos besoins. Nous avons opté pour <span className="highlight">HTML</span> , <span className="highlight">CSS</span> , <span className="highlight">JQUERY</span> et <span className="highlight">PHP</span> .
                         </p>
 						<div className="projectImgContainer"> 
-							<img src="./virt1.PNG"/>
-							<img src="./virt2.PNG"/>
-                            <img src="./virt3.PNG"/>
+							<img src="./virt1.png"/>
+							<img src="./virt2.png"/>
+                            <img src="./virt3.png"/>
 							<img src="./virt4.png"/>
 						</div>
             </div>
