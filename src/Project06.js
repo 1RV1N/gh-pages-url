@@ -29,10 +29,10 @@ class Project04 extends Component{
 						
 
 						<div className="projectImgContainer"> 
-							<img src="./space1.png"/>
-							<img src="./space2.png"/>
-							<img src="./space3.png"/>
-							<img src="./space4.png"/>
+							<img src="./space1.PNG"/>
+							<img src="./space2.PNG"/>
+							<img src="./space3.PNG"/>
+							<img src="./space4.PNG"/>
 						</div>
             </div>
         );

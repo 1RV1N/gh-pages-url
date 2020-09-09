@@ -7,6 +7,7 @@ import Comgraph from './Project05';
 import Project06 from './Project06';
 import Project07 from './Project07';
 import Project08 from './Project08';
+import Home from './Home';
 
 // class ProjectMenu extends Component{
 //     constructor(props){
@@ -67,7 +68,7 @@ class ProjectOpenInner extends Component{
                     <div className="projectInfo">
                         <div className="ariane"> {this.props.category} <hr/> </div>
                     </div>
-                    <img src="./portfolio/home.svg"/>
+                    <Home/>
                 </React.Fragment>
             );
             

@@ -49,7 +49,7 @@ class App extends Component {
           
           <nav onClick={this.navSm} >
               <ul id="nav">
-                  <Link to="/portfolio" ><li> Home </li></Link>
+                  <Link to="/portfolio/" ><li> Home </li></Link>
                   <Link to="/portfolio/FullProject" ><li>Full<br/> Project</li></Link>
                   <Link to="/portfolio/GraphicDesign" ><li>Graphic Design<br/> Project</li></Link>
                   <Link to="/portfolio/Ux-Ui" > <li> Ux - Ui<br/>Project</li> </Link>
@@ -62,7 +62,7 @@ class App extends Component {
           <section id="section" onClick={this.sectionSm} >
             <Switch>
               
-              <Route exact path="/portfolio">
+              <Route exact path="/portfolio/">
                 <CatHome/>
               </Route>
               <Route exact path="/portfolio/Ux-Ui">
