@@ -49,11 +49,11 @@ class App extends Component {
           
           <nav onClick={this.navSm} >
               <ul id="nav">
-                  <Link to="/" ><li> Home </li></Link>
-                  <Link to="/FullProject" ><li>Full<br/> Project</li></Link>
-                  <Link to="/GraphicDesign" ><li>Graphic Design<br/> Project</li></Link>
-                  <Link to="/Ux-Ui" > <li> Ux - Ui<br/>Project</li> </Link>
-                  <Link to="/Developer" ><li>Developer<br/> Project</li></Link>
+                  <Link to="/portfolio" ><li> Home </li></Link>
+                  <Link to="/portfolio/FullProject" ><li>Full<br/> Project</li></Link>
+                  <Link to="/portfolio/GraphicDesign" ><li>Graphic Design<br/> Project</li></Link>
+                  <Link to="/portfolio/Ux-Ui" > <li> Ux - Ui<br/>Project</li> </Link>
+                  <Link to="/portfolio/Developer" ><li>Developer<br/> Project</li></Link>
                   <a href="mailto:irvin.debruyne@gmail.com"><li> Contact Me </li> </a>
                   <a href="https://www.linkedin.com/in/irvin-de-bruyne-280824109" target="_blank"> <li>Linkedin</li></a>
               </ul>
@@ -62,19 +62,19 @@ class App extends Component {
           <section id="section" onClick={this.sectionSm} >
             <Switch>
               
-              <Route exact path="/">
+              <Route exact path="/portfolio">
                 <CatHome/>
               </Route>
-              <Route exact path="/Ux-Ui">
+              <Route exact path="/portfolio/Ux-Ui">
                 <CatUxUi/>
               </Route>
-              <Route exact path="/GraphicDesign">
+              <Route exact path="/portfolio/GraphicDesign">
                 <CatGraph/>
               </Route>
-              <Route exact path="/Developer">
+              <Route exact path="/portfolio/Developer">
                 <CatDev/>
               </Route>
-              <Route exact path="/FullProject">
+              <Route exact path="/portfolio/FullProject">
                 <CatFull/>
               </Route>
               

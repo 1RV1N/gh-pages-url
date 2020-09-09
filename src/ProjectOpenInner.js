@@ -67,7 +67,7 @@ class ProjectOpenInner extends Component{
                     <div className="projectInfo">
                         <div className="ariane"> {this.props.category} <hr/> </div>
                     </div>
-                    <img src="./home.svg"/>
+                    <img src="./portfolio/home.svg"/>
                 </React.Fragment>
             );
             

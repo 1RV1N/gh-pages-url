@@ -5,7 +5,7 @@ class Project01 extends Component{
     render(){
         return(
             
-                        <img src="./home.svg"/>
+                        <img src="./portfolio/home.svg"/>
             
         );
     }
